@@ -1,0 +1,162 @@
+{
+  "data": {
+    "columns": [
+      "date",
+      "usd_krw"
+    ],
+    "raw_rows": 1603,
+    "unparsable_dates": 0,
+    "duplicated_dates": 0,
+    "period_start": "2021-01-04",
+    "period_end": "2026-09-30",
+    "n_obs": 1472,
+    "nan_values": 0,
+    "nonpositive_values": 0,
+    "weekend_rows": 0,
+    "missing_weekdays": 27,
+    "missing_on_ecb_holiday": 27,
+    "missing_other_dates": []
+  },
+  "outliers": {
+    "robust_sigma_pct": 0.4808,
+    "flagged_count": 1,
+    "flagged_spike_and_revert": 0,
+    "level_dev_over_5pct": 0,
+    "max_abs_level_dev_pct": 3.19
+  },
+  "trend": {
+    "first": 1083.3,
+    "first_date": "2021-01-04",
+    "last": 1355.4,
+    "last_date": "2026-09-30",
+    "total_change_pct": 25.12,
+    "min": 1083.3,
+    "min_date": "2021-01-04",
+    "max": 1558.09,
+    "max_date": "2026-07-01",
+    "days_above_level_line_pct": 25.27,
+    "first_close_above_level_line": "2022-09-22",
+    "slope_krw_per_year": 59.75,
+    "r2": 0.804,
+    "ma20_ma120_crossovers": 12
+  },
+  "top10_daily_moves_down_count": 8,
+  "swings": {
+    "threshold_pct": 7.0,
+    "n_up": 3,
+    "n_down": 3,
+    "up_avg_days": 425.3,
+    "down_avg_days": 60.0,
+    "up_avg_pct_per_day": 0.056,
+    "down_avg_pct_per_day": -0.213,
+    "speed_ratio_down_vs_up": 3.83,
+    "lows": [
+      1083.3,
+      1224.88,
+      1353.24
+    ],
+    "highs": [
+      1443.29,
+      1478.35,
+      1558.09
+    ]
+  },
+  "distribution": {
+    "mean_pct": 0.0166,
+    "std_pct": 0.5777,
+    "skew": -0.566,
+    "excess_kurtosis": 3.377,
+    "share_beyond_2sd_pct": 5.37,
+    "normal_expected_beyond_2sd_pct": 4.55,
+    "share_beyond_3sd_pct": 0.95,
+    "normal_expected_beyond_3sd_pct": 0.27,
+    "up_days_share_pct": 52.11,
+    "mean_up_move_pct": 0.4293,
+    "mean_down_move_pct": -0.4325,
+    "max_up_pct": 2.069,
+    "max_up_date": "2022-11-17",
+    "max_down_pct": -4.471,
+    "max_down_date": "2022-11-11"
+  },
+  "acf_daily_change": {
+    "acf": {
+      "1": -0.0518,
+      "2": 0.0014,
+      "3": -0.0532,
+      "4": 0.0208,
+      "5": -0.0044,
+      "6": -0.0841,
+      "7": 0.0282,
+      "8": 0.04,
+      "9": 0.0422,
+      "10": -0.0322
+    },
+    "bound_95": 0.0511
+  },
+  "volatility": {
+    "vol20_max_pct": 23.28,
+    "vol20_max_date": "2022-12-06",
+    "vol20_min_pct": 3.36,
+    "vol20_min_date": "2021-12-31",
+    "corr_level_vs_vol20": 0.21,
+    "corr_ret20_vs_vol20": -0.313,
+    "mean_vol20_when_ret20_pos": 8.25,
+    "mean_vol20_when_ret20_neg": 9.5
+  },
+  "decomposition": {
+    "months": 69,
+    "months_with_trend": 57,
+    "obs_per_calendar_month_min": 4,
+    "obs_per_calendar_month_max": 5,
+    "seasonal_index": {
+      "1": -10.14,
+      "2": -10.63,
+      "3": 7.46,
+      "4": 10.62,
+      "5": -1.27,
+      "6": -12.92,
+      "7": -9.69,
+      "8": -5.72,
+      "9": 4.25,
+      "10": 22.38,
+      "11": 7.51,
+      "12": -1.86
+    },
+    "seasonal_amplitude_krw": 35.29,
+    "trend_range_krw": 312.15,
+    "resid_std_krw": 32.3,
+    "seasonal_strength": 0.093,
+    "trend_strength": 0.867
+  },
+  "forecast": {
+    "train_end": "2026-08-05",
+    "test_start": "2026-08-06",
+    "test_end": "2026-09-30",
+    "last_train_value": 1423.72,
+    "sigma_1day_krw": 8.37,
+    "naive_95_coverage_pct": 95.0,
+    "rolling_1step_MAE_last250": {
+      "naive": 6.738,
+      "ma5": 10.271,
+      "ma20": 20.159,
+      "drift": 6.743
+    }
+  },
+  "forecast_metrics": {
+    "naive": {
+      "MAE": 46.973,
+      "RMSE": 53.378,
+      "MAPE_pct": 3.447
+    },
+    "drift": {
+      "MAE": 51.85,
+      "RMSE": 58.725,
+      "MAPE_pct": 3.804
+    },
+    "ma20": {
+      "MAE": 91.985,
+      "RMSE": 95.415,
+      "MAPE_pct": 6.717
+    }
+  }
+}
